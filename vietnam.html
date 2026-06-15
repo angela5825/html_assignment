@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>Vietnamese</title>
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    @font-face {
+      font-family: 'Paperozi';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-display: swap;
+    }
+
+    * {
+      margin: 0;
+      font-family: 'Paperozi';
+
+    }
+    .header-img{
+      background-color :#8c8882;
+      text-align : center;
+    }
+    header {
+      padding: 0 20px;
+      text-align: left;
+    }
+
+    header h3 {
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    header h3,
+    header p {
+      padding: 10px 10px;
+    }
+
+    header h3 {
+      margin-top: 20px;
+    }
+
+    header img {
+      height: 200px;
+      width: 200px;
+    }
+
+    .go-home{
+      position: fixed;
+      right : 30px;
+      top : 20px;
+      padding : 4px;
+      background-color : white;
+      font-size: 20px;
+      border-radius : 20px;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+
+    }
+
+    aside {
+      width: 15%;
+      min-height: 100vh;
+      font-size: 14px;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+      background-color: #f8f8f8;
+    }
+    aside a{
+      text-decoration : none;
+      color : black;
+    }
+
+    .main {
+      flex: 1;
+    }
+
+    .menu-list {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    @keyframes effect {
+      0% {
+        transform: translateY(0px);
+        
+      }
+      50%{
+        transform: translateY(-5px);
+      }
+      100% {
+        transform: translateY(0);
+       
+      }
+    }
+
+    .menu:hover {
+      animation: effect 0.3s ease;
+    }
+
+    .menu {
+      
+      width: 220px;
+      height: 220px;
+      padding: 15px;
+      border: 1px solid #F7F1DE;
+      text-align: center;
+      justify-content: center;
+      transition: 0.3s;
+      background-color: #B0BA99;
+      border-radius: 4px;
+
+    }
+
+    .menu img {
+      width: 180px;
+      height: 180px;
+      margin: 3px;
+    }
+
+    .menu .inst{
+      background-color: #F7F1DE;
+      border-radius : 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-img"> <img src="./images/벱.jpeg" alt="벱"></div>
+   
+    <h2>소개</h2>
+    <p>성수동 베트남 쌀국수 전문점 벱에서는 매일 소뼈와 돼지뼈, 10가지의 향신료로 우려낸 깊은 맛의 육수에 가느다란 100% 쌀면, 선도 높은 재료들이 한 데 어우러진 최고의 쌀국수를 맛보실 수 있습니다.</p>
+  </header>
+  <div class="go-home">
+    <a href="./main.html">
+      <i class="fa-solid fa-house"></i>
+    </a>
+   
+  </div>
+  <div class="container">
+    <aside>
+      <h3>
+        <a href="https://map.naver.com/p/search/%EB%B2%B1/place/1465603515?c=15.00,0,0,0,dh&placePath=/home?bk_query=%EB%B2%B1&entry=bmp&from=map&fromPanelNum=2&timestamp=202606131941&locale=ko&svcName=map_pcv5&searchText=%EB%B2%B1">벱</a>
+
+      </h3>
+      <br>
+      <p>📍 위치 | 서울 성동구 성수일로4가길 2 1층 </p>
+      <br>
+   
+      <br>
+      <p>📞 전화번호 | 0507-1315-4502 </p>
+      <br>
+
+
+    </aside>
+    <main>
+      <h2>My Favorite Menu 😋</h2>
+
+      <div class="menu-list">
+        <div class="menu">
+          <img src="./images/양지쌀국수.jpeg" alt="양지차돌">
+          <div class="inst"><p>양지&차돌박이 쌀국수</p>
+            <p>🏷️ 12,000</p></div>
+          
+        </div>
+        <div class="menu">
+          <img src="./images/해산물볶음면.jpeg" alt="해산물볶음면">
+          <div class="inst"><p>해산물 볶음면</p>
+            <p>🏷️ 23,000</p></div>
+          
+        </div>
+        <div class="menu">
+          <img src="./images/해산물볶음밥.jpeg" alt="해산물 볶음밥">
+          <div class="inst"><p>해산물 볶음밥</p>
+            <p>🏷️ 13,000</p></div>
+          
+        </div>
+        <div class="menu">
+          <img src="./images/짜조.jpeg" alt="짜조">
+          <div class="inst"><p>짜조</p>
+            <p>🏷️ 5,000</p></div>
+          
+        </div>
+     
+          
+        </div>
+      </div>
+
+    </main>
+  </div>
+</body>
+
+</html>

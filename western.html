@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>Western</title>
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    @font-face {
+      font-family: 'Paperozi';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-display: swap;
+    }
+
+    * {
+      margin: 0;
+      font-family: 'Paperozi';
+
+    }
+    .header-img{
+      background-color :white;
+      text-align : center;
+    }
+    header {
+      padding: 0 20px;
+      text-align: left;
+    }
+
+    header h3 {
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    header h3,
+    header p {
+      padding: 10px 10px;
+    }
+
+    header h3 {
+      margin-top: 20px;
+    }
+
+    header img {
+      height: 100px;
+      width: 200px;
+    }
+
+    .go-home{
+      position: fixed;
+      right : 30px;
+      top : 20px;
+      padding : 4px;
+      background-color : white;
+      font-size: 20px;
+      border-radius : 20px;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+
+    }
+
+    aside {
+      width: 15%;
+      min-height: 100vh;
+      font-size: 14px;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+      background-color: #f8f8f8;
+    }
+
+    aside  a{
+      text-decoration: none;
+      color : black;
+    }
+
+    .main {
+      flex: 1;
+    }
+
+    .menu-list {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    @keyframes effect {
+      0% {
+        transform: translateY(0px);
+        
+      }
+      50%{
+        transform: translateY(-5px);
+      }
+      100% {
+        transform: translateY(0);
+       
+      }
+    }
+
+    .menu:hover {
+      animation: effect 0.3s ease;
+    }
+
+    .menu {
+      
+      width: 220px;
+      height: 220px;
+      padding: 15px;
+      border: 1px solid #F7F1DE;
+      text-align: center;
+      justify-content: center;
+      transition: 0.3s;
+      background-color: #B0BA99;
+      border-radius: 4px;
+
+    }
+
+    .menu img {
+      width: 180px;
+      height: 180px;
+      margin: 3px;
+    }
+
+    .menu .inst{
+      background-color: #F7F1DE;
+      border-radius : 3px;
+    }
+
+    footer{
+      /* margin-top : 20px; */
+      padding: 40px;  
+      margin-bottom: 10px;
+
+    }
+
+    footer a{
+      text-decoration: none;
+      color : #4E220F;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-img"> <img src="./images/꽁티드툴레아.png" alt="꽁티드"></div>
+   
+    <h2>소개</h2>
+    <p>다채로운 향기 관련 제품들과 브런치 및 와인을 즐길 수 있는 복합 문화 공간</p>
+  </header>
+  <div class="go-home">
+    <a href="./main.html">
+      <i class="fa-solid fa-house"></i>
+    </a>
+   
+  </div>
+  <div class="container">
+    <aside>
+      <h3>
+        <a href="https://map.naver.com/p/search/%EA%BD%81%ED%8B%B0%EB%93%9C%ED%88%B4%EB%A0%88%EC%95%84/place/1432373629?placePath=/home?abtExp=N-PLCPWL-RANK-26:2%5EN-PLC-AD-UI-26:3&bk_query=%EA%BD%81%ED%8B%B0%EB%93%9C%ED%88%B4%EB%A0%88%EC%95%84&entry=pll&from=nx&fromNxList=true&fromPanelNum=2&timestamp=202606131947&locale=ko&svcName=map_pcv5&searchText=%EA%BD%81%ED%8B%B0%EB%93%9C%ED%88%B4%EB%A0%88%EC%95%84&searchType=place&c=15.00,0,0,0,dh">꽁티드툴레아</a>
+      </h3>
+      <br>
+      <p>📍 위치 | 서울 강남구 도산대로49길 39 </p>
+      <br>
+   
+      <br>
+      <p>📞 전화번호 | 0507-1325-8490 </p>
+      <br>
+      <p> 🗓️ 예약 | 캐치테이블 앱 이용, 전화 예약 </p>
+
+    </aside>
+    <main>
+      <h2>My Favorite Menu 😋</h2>
+
+      <div class="menu-list">
+        <div class="menu">
+          <img src="./images/레몬엔초비.jpeg" alt="레몬엔초비">
+          <div class="inst"><p>레몬 엔초비 파스타</p>
+            <p>🏷️ 23,000</p></div>
+          
+        </div>
+        <div class="menu">
+          <img src="./images/김볶.jpeg" alt="김볶">
+          <div class="inst"><p>김치볶음밥</p>
+            <p>🏷️ 23,000</p></div>
+          
+        </div>
+        <div class="menu">
+          <img src="./images/스파이시떡볶이.jpeg" alt="떢볶이">
+          <div class="inst"><p>스파이시 떡볶이</p>
+            <p>🏷️ 26,000</p></div>
+          
+        </div>
+        <div class="menu">
+          <img src="./images/아보카도.png" alt="아보카도토스트">
+          <div class="inst"><p> 아보카도 토스트</p>
+            <p>🏷️ 14,000</p></div>
+          
+        </div>
+        <div class="menu">
+          <img src="./images/초코무스.jpeg" alt="초코무스">
+          <div class="inst"><p> 초코 무스</p>
+            <p>🏷️ 11,900</p></div>
+          
+        </div>
+      </div>
+
+    </main>
+    
+  </div>
+  <footer>
+    <h2>같이 들리면 좋은 카페 ☕️</h2>
+    <div class="cafe">
+      <h3><a href="https://map.naver.com/p/entry/place/1956591980?c=15.69,0,0,0,dh&placePath=/menu&from=map&fromPanelNum=1&additionalHeight=76&timestamp=202606131957&locale=ko&svcName=map_pcv5">우디집 로스터리</a></h3>
+    </div>
+  </footer>
+</body>
+
+</html>

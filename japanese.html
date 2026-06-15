@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>Japanese</title>
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    @font-face {
+      font-family: 'Paperozi';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-5Medium.woff2') format('woff2');
+      font-weight: 500;
+      font-display: swap;
+    }
+
+    * {
+      margin: 0;
+      font-family: 'Paperozi';
+
+    }
+    .header-img{
+      background-color : black;
+      text-align : center;
+    }
+    header {
+      padding: 0 20px;
+      text-align: left;
+    }
+
+    header h3 {
+      font-weight: bold;
+      margin-left: 10px;
+    }
+
+    header h3,
+    header p {
+      padding: 10px 10px;
+    }
+
+    header h3 {
+      margin-top: 20px;
+    }
+
+    header img {
+      height: 170px;
+      width: 400px;
+    }
+
+    .go-home{
+      position: fixed;
+      right : 30px;
+      top : 20px;
+      padding : 4px;
+      background-color : white;
+      font-size: 20px;
+      border-radius : 20px;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+
+    }
+
+    aside {
+      width: 15%;
+      min-height: 100vh;
+      font-size: 14px;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+      background-color: #f8f8f8;
+    }
+    
+    aside a {
+      text-decoration: none;
+      color : black;
+    }
+
+    .main {
+      flex: 1;
+    }
+
+    .menu-list {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    @keyframes effect {
+      0% {
+        transform: translateY(0px);
+        
+      }
+      50%{
+        transform: translateY(-5px);
+      }
+      100% {
+        transform: translateY(0);
+       
+      }
+    }
+
+    .menu:hover {
+      animation: effect 0.3s ease;
+    }
+
+    .menu {
+      
+      width: 220px;
+      height: 220px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      text-align: center;
+      justify-content: center;
+      transition: 0.3s;
+      background-color: #292d39;
+
+    }
+
+    .menu img {
+      width: 180px;
+      height: 180px;
+      margin: 3px;
+    }
+
+    .menu .inst{
+      background-color: #e6e9ec;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-img"> <img src="./images/호무랑.png" alt="호무랑"></div>
+   
+    <h2>소개</h2>
+    <p>230년을 이어온 일본 소바 명가 '사라시나 호리이'와의 기술제휴로<br> 일본 정통 수타 소바의 맛을 느낄 수 있는 호무랑
+      일본의 정통 분위기를 모던하게 해석한 공간에서 일본의 맛과 멋을 만날 수 있습니다.</p>
+  </header>
+  <div class="go-home">
+    <a href="./main.html">
+      <i class="fa-solid fa-house"></i>
+    </a>
+   
+  </div>
+  <div class="container">
+    <aside>
+      <h3>
+        <a href="https://map.naver.com/p/search/%ED%98%B8%EB%AC%B4%EB%9E%91/place/31139908?c=15.00,0,0,0,dh&isCorrectAnswer=true&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202606131946&locale=ko&svcName=map_pcv5&searchText=%ED%98%B8%EB%AC%B4%EB%9E%91">호무랑</a></h3>
+      <br>
+      <p>📍 위치 | 서울 강남구 도산대로 442 1층 </p>
+      <br>
+      <p>⭐️ 평점 | 4.4</p>
+      <br>
+      <p>📞 전화번호 | 02-6947-1279 </p>
+      <br>
+      <p> 🗓️ 예약 | 캐치테이블 앱 이용, 전화 예약 </p>
+
+    </aside>
+    <main>
+      <h2>My Favorite Menu 😋</h2>
+
+      <div class="menu-list">
+        <div class="menu">
+          <img src="./images/해물나베.png" alt="">
+          <div class="inst"><p>해물 나베 우동</p>
+            <p>🏷️ 38,000</p></div>
+          
+        </div>
+        <div class="menu">
+          <img src="./images/우니롤.png" alt="우니롤">
+          <div class="inst"><p>우니를 곁드린 아마에비 롤(6pcs)</p>
+            <p>🏷️ 38,000</p></div>
+          
+        </div>
+        <div class="menu">
+          <img src="./images/차완무시.png" alt="차완무시">
+          <div class="inst"><p> 트러플,우니 계란찜</p>
+            <p>🏷️ 26,000</p></div>
+          
+        </div>
+        <div class="menu">
+          <img src="./images/말차빙수.jpg" alt="말차빙수">
+          <div class="inst"><p> 말차 빙수[Small/Large]</p>
+            <p>🏷️ 13,000 / 19,000</p></div>
+          
+        </div>
+      </div>
+
+    </main>
+  </div>
+</body>
+
+</html>
