@@ -131,6 +131,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       background-color: #F7F1DE;
       border-radius : 3px;
     }
+    /* 테블릿 사이즈 (768px 이하) */
+    @media screen and (max-width : 768px){
+
+.container {
+  display : flex;
+  flex-direction :column;
+}
+main h2{
+  text-align: center;
+}
+aside {
+  box-sizing : border-box;
+  width : 100%;
+  min-height : auto;
+  border-right : none;
+  border-bottom: 1px solid #ddd;
+  
+}
+.menu-list {
+  justify-content : flex-start;
+
+}
+.menu {
+  width : 170px;
+  height : auto;
+
+}
+header img{
+  min-width : 20%;
+  height : auto
+}
+}
   </style>
 </head>
 
